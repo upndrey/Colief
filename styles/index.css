@@ -1,0 +1,259 @@
+/* GLOBAL */
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  width: 1440px;
+  padding: 0 94px;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+  height: 100%;
+  margin: auto;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/* /GLOBAL */
+/* NAV */
+.nav__wrapper {
+  background: #8199DF26;
+  height: 147px;
+}
+
+.nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  background-image: url("../images/icons/colief.svg");
+  background-size: cover;
+  width: 96px;
+  height: 65px;
+}
+
+.nav__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list>* {
+  margin: 0 20px;
+}
+
+.nav__list>li>* {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.nav__list>li>.active {
+  font-weight: 700;
+}
+
+.nav__order {
+  width: 192px;
+  height: 36px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px 24px;
+  border: 1.5px solid rgba(255, 217, 100, 0.75);
+  border-radius: 35px;
+}
+
+/* /NAV */
+/* HEADER */
+.header__wrapper {
+  height: 650px;
+  box-sizing: border-box;
+  background: #8199DF26;
+}
+
+.header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.header__left {
+  padding-top: 83px;
+  box-sizing: border-box;
+}
+
+.header__left>h1 {
+  max-width: 100%;
+  width: 700px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #4198B9;
+  margin-bottom: 7px;
+}
+
+.header__left>p {
+  max-width: 100%;
+  width: 617px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 149.52%;
+  color: #838383;
+  margin-bottom: 47px;
+}
+
+.header__left>button {
+  width: 230px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 55px;
+  color: #FFFFFF;
+  background: linear-gradient(177.74deg, #FCCA05 1.86%, rgba(255, 146, 0, 0.65) 97.36%);
+  box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.07);
+  border-radius: 35px;
+  border: 0;
+  cursor: pointer;
+}
+
+.header__right {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 500px;
+  margin-top: 60px;
+}
+
+.header__right>div {
+  width: 210px;
+  height: 335px;
+  position: relative;
+}
+
+.header__right>div>span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.header__right>div>img {
+  position: absolute;
+  left: -88px;
+  bottom: -75px;
+}
+
+.header__right>.plus {
+  width: 76px;
+  height: 76px;
+  position: relative;
+  left: 38px;
+  bottom: 42px;
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+}
+
+.header__right>p {
+  width: 100%;
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11.52px;
+  line-height: 150%;
+  text-align: right;
+  color: #C0C0C0;
+}
+
+.header__right>.vitaminD>span {
+  right: -63px;
+  top: -6px;
+  color: rgba(92, 166, 255, 0.15);
+}
+
+.header__right>.vitaminC>span {
+  right: 6px;
+  top: -5px;
+  color: rgba(255, 135, 36, 0.15);
+}
+
+/* /HEADER */
+/* D3 */
+.d3 {
+  overflow: visible;
+}
+
+/* ADVANTAGES */
+.advantages {
+  width: 1040px;
+  max-width: 100%;
+  height: 100px;
+  margin: auto;
+  background: #F6F9FC;
+  opacity: 0.9;
+  box-shadow: 0px 2px 3px 3px rgba(191, 217, 254, 0.15);
+  border-radius: 30px;
+  position: relative;
+  top: -50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantages__block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.advantages__block>.icon {}
+
+.advantages>.since {}
+
+/* /ADVANTAGES */
+/* /D3 */
