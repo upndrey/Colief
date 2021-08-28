@@ -330,7 +330,7 @@ body {
 .vitamins>h2:after {
   content: '';
   width: 400px;
-  height: 15px;
+  height: 14px;
   margin-top: 10px;
   background-image: url("../images/wave.png");
 }
@@ -388,7 +388,7 @@ body {
 .vitamins__info:after {
   content: '';
   width: 400px;
-  height: 15px;
+  height: 14px;
   margin-top: 10px;
   background-image: url("../images/wave.png");
   position: absolute;
@@ -586,6 +586,10 @@ body {
   color: rgba(255, 135, 36, 1);
   margin-top: 175px;
   margin-bottom: 110px;
+}
+
+.c__vitamins>h2:after {
+  background-image: url("../images/c_wave.png");
 }
 
 .c__vitamins>.vitamins__text {
