@@ -296,6 +296,29 @@ body {
   background: rgba(227, 245, 251, 1);
   padding-bottom: 120px;
   overflow: visible;
+  position: relative;
+}
+
+.d3__wrapper:before {
+  content: '';
+  width: 200px;
+  height: 368px;
+  position: absolute;
+  left: 0;
+  top: 85px;
+  background-image: url("../images/d3/sun.png");
+  z-index: 1000;
+}
+
+.d3__wrapper:after {
+  content: '';
+  width: 291px;
+  height: 425px;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  background-image: url("../images/d3/vector.png");
+  z-index: 999;
 }
 
 /* D3 */
@@ -348,6 +371,8 @@ body {
 
 .vitamins__text>div:first-child {
   margin-right: 125px;
+  position: relative;
+  z-index: 1001;
 }
 
 .vitamins__text>.text__p {
@@ -582,11 +607,39 @@ body {
 .c__wrapper {
   background: rgba(255, 152, 72, 0.2);
   padding-bottom: 120px;
+  position: relative;
+}
+
+.c__wrapper:before {
+  content: '';
+  width: 422px;
+  height: 672px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-image: url("../images/c/sun.png");
+  z-index: 1000;
+}
+
+.c__wrapper:after {
+  content: '';
+  width: 247px;
+  height: 370px;
+  position: absolute;
+  right: 0;
+  top: 317px;
+  background-image: url("../images/c/vector.png");
+  z-index: 999;
+}
+
+.c__wrapper .vitamins__text {
+  z-index: 1000;
+  position: relative;
 }
 
 .c__vitamins>h2 {
   color: rgba(255, 135, 36, 1);
-  margin-top: 175px;
+  margin-top: 136px;
   margin-bottom: 110px;
 }
 
@@ -1002,6 +1055,17 @@ body {
   box-shadow: 2px 2px 8px 4px #DCE9F8;
   border-radius: 0px 50px 50px 0px;
   height: 680px;
+  position: relative;
+}
+
+.onlineD3:after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 11px;
+  right: 0;
+  bottom: 100px;
+  background-image: url("../images/online/d3_path.png");
 }
 
 .onlineD3__content {
@@ -1029,6 +1093,39 @@ body {
   border-radius: 30px;
   padding: 26px 19px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.onlineD3__warning:before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  width: 41px;
+  height: 41px;
+  background: #fff;
+  border-radius: 100px;
+}
+
+.onlineD3__warning:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100px;
+}
+
+.onlineD3__warning>.after {
+  position: absolute;
+  right: -30px;
+  bottom: -20px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 100px;
 }
 
 .onlineD3__warning>p {
@@ -1047,6 +1144,16 @@ body {
   width: 297px;
   height: 500px;
   position: relative;
+}
+
+.onlineD3__img:before {
+  content: '';
+  position: absolute;
+  left: -286px;
+  top: 229px;
+  width: 335px;
+  height: 184px;
+  background-image: url("../images/online/d3_dots.png");
 }
 
 .onlineD3__img>img {
@@ -1157,6 +1264,17 @@ body {
   border-radius: 50px 0px 0px 50px;
   height: 680px;
   margin-left: auto;
+  position: relative;
+}
+
+.onlineC:after {
+  content: '';
+  position: absolute;
+  width: 298px;
+  height: 11px;
+  left: 0;
+  bottom: 100px;
+  background-image: url("../images/online/c_path.png");
 }
 
 .onlineC__content {
@@ -1177,6 +1295,39 @@ body {
   border-radius: 30px;
   padding: 26px 19px;
   box-sizing: border-box;
+  position: relative;
+}
+
+.onlineC__warning:before {
+  content: '';
+  position: absolute;
+  left: -60px;
+  bottom: 10px;
+  width: 23px;
+  height: 23px;
+  background: #fff;
+  border-radius: 100px;
+}
+
+.onlineC__warning:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 100px;
+}
+
+.onlineC__warning>.after {
+  position: absolute;
+  right: -40px;
+  top: -30px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 100px;
 }
 
 .onlineC__warning>p {
@@ -1196,6 +1347,16 @@ body {
   width: 297px;
   height: 500px;
   position: relative;
+}
+
+.onlineC__img:before {
+  content: '';
+  position: absolute;
+  top: 290px;
+  right: -300px;
+  width: 288px;
+  height: 164px;
+  background-image: url("../images/online/C_dots.png");
 }
 
 .onlineC__img>img {
