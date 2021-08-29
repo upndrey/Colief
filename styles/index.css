@@ -1404,10 +1404,33 @@ body {
 .reviews__wrapper {
   padding-top: 140px;
   padding-bottom: 100px;
+  position: relative;
+}
+
+.reviews__wrapper:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 265px;
+  width: 435px;
+  height: 536px;
+  background-image: url("../images/reviews/left_vector.png");
+}
+
+.reviews__wrapper:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 265px;
+  width: 435px;
+  height: 536px;
+  background-image: url("../images/reviews/right_vector.png");
 }
 
 .reviews {
   overflow: visible;
+  position: relative;
+  z-index: 1000
 }
 
 .reviews>h2 {
