@@ -1692,6 +1692,10 @@ body {
   padding-bottom: 113px;
 }
 
+.health {
+  overflow: visible;
+}
+
 .health>h2 {
   max-width: 722px;
   font-style: normal;
@@ -1701,6 +1705,18 @@ body {
   text-transform: uppercase;
   color: #A3E9FF;
   margin-bottom: 150px;
+  position: relative;
+}
+
+.health>h2:after {
+  content: '';
+  position: absolute;
+  left: -220px;
+  bottom: -50px;
+  width: 320px;
+  height: 13px;
+  background-image: url("../images/wave.png");
+  background-repeat: no-repeat;
 }
 
 .health>p {
