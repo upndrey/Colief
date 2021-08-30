@@ -20,6 +20,57 @@ body {
 
 /* /GLOBAL */
 /* NAV */
+.mobileNav__wrapper.hidden {
+  display: none;
+}
+
+.mobileNav__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  z-index: 1001;
+}
+
+.mobileNav {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileNav>.nav__list {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.mobileNav>.nav__list>* {
+  margin-bottom: 15px;
+}
+
+.mobileNav>.nav__list>*>* {
+  font-size: 22px;
+}
+
+.mobileNav>.nav__order {
+  font-size: 24px;
+  width: 265px;
+  height: 50px;
+  border: 2px solid rgba(255, 217, 100, 0.75);
+}
+
+.burger {
+  display: none;
+}
+
 .nav__wrapper {
   background: #8199DF26;
   height: 147px;
@@ -193,6 +244,7 @@ body {
   bottom: 42px;
   background-image: url("../images/icons/plus.svg");
   background-repeat: no-repeat;
+  z-index: 999;
 }
 
 .header__right>p {
@@ -307,7 +359,7 @@ body {
   left: 0;
   top: 85px;
   background-image: url("../images/d3/sun.png");
-  z-index: 1000;
+  z-index: 2;
 }
 
 .d3__wrapper:after {
@@ -318,7 +370,7 @@ body {
   left: 0;
   top: 200px;
   background-image: url("../images/d3/vector.png");
-  z-index: 999;
+  z-index: 1;
 }
 
 /* D3 */
@@ -350,6 +402,8 @@ body {
   -ms-align-items: center;
   align-items: center;
   margin-bottom: 72px;
+  position: relative;
+  z-index: 1000;
 }
 
 .vitamins>h2:after {
@@ -361,6 +415,7 @@ body {
 }
 
 .vitamins__text {
+  max-width: 100%;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -378,7 +433,6 @@ body {
 .vitamins__text>.text__p {
   width: 605px;
   height: 360px;
-  max-width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 22.5px;
@@ -388,7 +442,6 @@ body {
 
 .vitamins__text>.text__p>p:first-child {
   width: 578px;
-  max-width: 100%;
   margin-top: 70px;
   margin-bottom: 29px;
 }
@@ -396,6 +449,7 @@ body {
 .vitamins__info {
   position: relative;
   width: 1252px;
+  max-width: 100%;
   height: 104px;
   margin: auto;
   background: rgba(246, 249, 252, 0.75);
@@ -618,7 +672,7 @@ body {
   right: 0;
   top: 20px;
   background-image: url("../images/c/sun.png");
-  z-index: 1000;
+  z-index: 2;
 }
 
 .c__wrapper:after {
@@ -629,7 +683,7 @@ body {
   right: 0;
   top: 317px;
   background-image: url("../images/c/vector.png");
-  z-index: 999;
+  z-index: 1;
 }
 
 .c__wrapper .vitamins__text {
@@ -641,6 +695,8 @@ body {
   color: rgba(255, 135, 36, 1);
   margin-top: 136px;
   margin-bottom: 110px;
+  position: relative;
+  z-index: 1000
 }
 
 .c__vitamins>h2:after {
@@ -665,6 +721,10 @@ body {
 
 .c__vitamins>.vitamins__text>div:first-child {
   margin-right: 137px;
+}
+
+.vitamins__text>div>img {
+  max-width: 100%;
 }
 
 .c__vitamins>.functions {
@@ -1506,27 +1566,32 @@ body {
 
 .slick-dots {
   padding-top: 30px;
-  width: 100px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   -ms-align-items: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto;
+}
+
+.slick-dots>li {
+  display: block;
+  color: transparent;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 5px;
 }
 
 .slick-dots>li, .slick-dots>li>* {
   display: block;
   color: transparent;
   background-color: transparent;
+  border: 1px solid #000;
   width: 10px;
   height: 10px;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #000;
   border-radius: 100px;
-  cursor: pointer;
 }
 
 .slick-dots>li.slick-active {
@@ -1605,6 +1670,7 @@ body {
 .question__title {
   position: relative;
   width: 616px;
+  max-width: 100%;
   height: 70px;
   display: -webkit-flex;
   display: -ms-flex;
@@ -1626,7 +1692,7 @@ body {
 }
 
 .question__title>span {
-  max-width: 480px;
+  max-width: 470px;
 }
 
 .question__title:after {
@@ -1688,6 +1754,7 @@ body {
   background-image: url("../images/health/bg.png");
   -webkit-background-size: cover;
   background-size: cover;
+  background-position: center;
   padding-top: 100px;
   padding-bottom: 113px;
 }

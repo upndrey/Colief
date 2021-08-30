@@ -7,4 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  let burgerDom = document.querySelector(".burger");
+  let mobileNavDom = document.querySelector(".mobileNav__wrapper");
+  burgerDom.addEventListener("click", () => {
+    burgerDom.classList.toggle("active");
+    mobileNavDom.classList.toggle("hidden");
+  })
+
 });

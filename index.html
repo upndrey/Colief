@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=425, initial-scale=0.86, maximum-scale=3.0" />
+  <meta name="viewport" content="width=425, initial-scale=1, maximum-scale=3.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="HandheldFriendly" content="true" />
 
@@ -22,6 +22,18 @@
 </head>
 
 <body>
+  <div class="mobileNav__wrapper wrapper hidden">
+    <nav class="mobileNav container">
+      <ul class="nav__list">
+        <li><a href="#" class="active">Купить</a></li>
+        <li><a href="#">О витамине Д3</a></li>
+        <li><a href="#">О витамине C</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a href="#" class="nav__order">Заказать набор</a>
+    </nav>
+  </div>
   <div class="nav__wrapper wrapper">
     <nav class="nav container">
       <div class="nav__logo"></div>
@@ -33,6 +45,9 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <a href="#" class="nav__order">Заказать набор</a>
+      <div class="burger">
+        <div class="burger__icon"></div>
+      </div>
     </nav>
   </div>
 
@@ -462,13 +477,23 @@
   <script type="text/javascript" src="./scripts/jquery.js"></script>
   <script type="text/javascript" src="./scripts/slick.min.js"></script>
   <script>
-    $(document).ready(function() {
-      $('.slick').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: true,
+    if ($(window).width() > 768) {
+      $(document).ready(function() {
+        $('.slick').slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+        });
       });
-    });
+    } else {
+      $(document).ready(function() {
+        $('.slick').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        });
+      });
+    }
   </script>
   <script src="./scripts/index.js" charset="utf-8"></script>
 </body>
