@@ -743,6 +743,10 @@
     padding-bottom: 50px;
   }
 
+  .onlineC__title, .onlineD3__title {
+    font-size: 28px;
+  }
+
   .onlineC__img:before {
     right: -370px;
   }
