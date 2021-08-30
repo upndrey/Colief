@@ -743,6 +743,10 @@
     padding-bottom: 50px;
   }
 
+  .onlineC__img:before {
+    right: -370px;
+  }
+
   .onlineC .content__left {
     width: 100%;
   }
