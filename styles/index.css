@@ -757,6 +757,10 @@ body {
   bottom: -22px;
 }
 
+.additional>div:last-child>span:after {
+  display: none;
+}
+
 .c__vitamins .additional {
   background: #F8F8F8;
 }
