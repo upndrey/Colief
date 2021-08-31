@@ -1,6 +1,7 @@
 /* GLOBAL */
 body {
   font-family: 'Rubik', sans-serif;
+  min-width: 425px;
 }
 
 .container {
