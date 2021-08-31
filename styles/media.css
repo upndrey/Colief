@@ -804,6 +804,8 @@
 
   .additionalMobile {
     padding-top: 25px;
+    width: 400px;
+    margin: auto;
   }
 
   .additionalMobile>div {
