@@ -87,4 +87,41 @@ document.addEventListener("DOMContentLoaded", () => {
       additionalD3Dom.classList.toggle("hidden");
     }
   });
+
+  // scrolls
+  $(".buyLink").click(function() {
+    burgerDom.classList.remove("active");
+    mobileNavDom.classList.add("hidden");
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000);
+  });
+  $(".d3Link").click(function() {
+    burgerDom.classList.remove("active");
+    mobileNavDom.classList.add("hidden");
+    $('html, body').animate({
+      scrollTop: $("#d3").offset().top
+    }, 1000);
+  });
+  $(".cLink").click(function() {
+    burgerDom.classList.remove("active");
+    mobileNavDom.classList.add("hidden");
+    $('html, body').animate({
+      scrollTop: $("#c").offset().top
+    }, 1000);
+  });
+  $(".reviewsLink").click(function() {
+    burgerDom.classList.remove("active");
+    mobileNavDom.classList.add("hidden");
+    $('html, body').animate({
+      scrollTop: $("#reviews").offset().top
+    }, 1000);
+  });
+  $(".contactsLink").click(function() {
+    burgerDom.classList.remove("active");
+    mobileNavDom.classList.add("hidden");
+    $('html, body').animate({
+      scrollTop: $("#contacts").offset().top
+    }, 1000);
+  });
 });

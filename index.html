@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=425, initial-scale=1, maximum-scale=3.0, user-scalable=no" />
+  <meta name="viewport" content="width=425, initial-scale=1, maximum-scale=3.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="HandheldFriendly" content="true" />
 
@@ -25,11 +25,11 @@
   <div class="mobileNav__wrapper wrapper hidden">
     <nav class="mobileNav container">
       <ul class="nav__list">
-        <li><a href="#" class="active">Купить</a></li>
-        <li><a href="#">О витамине Д3</a></li>
-        <li><a href="#">О витамине C</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#" class="active buyLink">Купить</a></li>
+        <li><a href="#" class="d3Link">О витамине Д3</a></li>
+        <li><a href="#" class="cLink">О витамине C</a></li>
+        <li><a href="#" class="reviewsLink">Отзывы</a></li>
+        <li><a href="#" class="contactsLink">Контакты</a></li>
       </ul>
       <a href="#" class="nav__order">Заказать набор</a>
     </nav>
@@ -38,11 +38,11 @@
     <nav class="nav container">
       <div class="nav__logo"></div>
       <ul class="nav__list">
-        <li><a href="#" class="active">Купить</a></li>
-        <li><a href="#">О витамине Д3</a></li>
-        <li><a href="#">О витамине C</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#" class="active buyLink">Купить</a></li>
+        <li><a href="#" class="d3Link">О витамине Д3</a></li>
+        <li><a href="#" class="cLink">О витамине C</a></li>
+        <li><a href="#" class="reviewsLink">Отзывы</a></li>
+        <li><a href="#" class="contactsLink">Контакты</a></li>
       </ul>
       <a href="#" class="nav__order">Заказать набор</a>
       <div class="burger">
@@ -51,7 +51,7 @@
     </nav>
   </div>
 
-  <div class="header__wrapper wrapper">
+  <div class="header__wrapper wrapper" id="buy">
     <header class="header container">
       <div class="header__left">
         <h1>Позаботьтесь о здоровом развитии вашего малыша</h1>
@@ -93,7 +93,7 @@
           <p><span>100%</span> гипоаллергенно</p>
         </div>
       </div>
-      <div class="d3__vitamins vitamins">
+      <div class="d3__vitamins vitamins" id="d3">
         <h2>В чем особенность и польза витамина Д3 для детей?</h2>
         <div class="vitamins__text text">
           <div>
@@ -223,7 +223,7 @@
     </div>
   </div>
 
-  <div class="c__wrapper wrapper">
+  <div class="c__wrapper wrapper" id="c">
     <div class="c container">
       <div class="c__vitamins vitamins">
         <h2>В чем особенность и польза витамина C для детей?</h2>
@@ -443,7 +443,7 @@
     </div>
   </div>
 
-  <div class="reviews__wrapper wrapper">
+  <div class="reviews__wrapper wrapper" id="reviews">
     <div class="reviews container">
       <h2>Опыт других мам</h2>
       <p>Посмотрите, что говорят покупатели, которые уже попробовали наши средства</p>
@@ -579,15 +579,15 @@
     </div>
   </div>
 
-  <footer class="footer__wrapper wrapper">
+  <footer class="footer__wrapper wrapper" id="contacts">
     <nav class="nav container">
       <div class="nav__logo"></div>
       <ul class="nav__list">
-        <li><a href="#" class="active">Купить</a></li>
-        <li><a href="#">Преимущества витамина Д3</a></li>
-        <li><a href="#">Преимущества витамина С</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#" class="active buyLink">Купить</a></li>
+        <li><a href="#" class="d3Link">Преимущества витамина Д3</a></li>
+        <li><a href="#" class="cLink">Преимущества витамина C</a></li>
+        <li><a href="#" class="reviewsLink">Отзывы</a></li>
+        <li><a href="#" class="contactsLink">Контакты</a></li>
       </ul>
       <a href="#" class="nav__order">Заказать набор</a>
     </nav>

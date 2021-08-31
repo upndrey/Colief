@@ -67,6 +67,8 @@
     width: 100px;
   }
 
+  .vitamins__info>ul>li {}
+
   /* /ADVANTAGES */
   /* D3 */
   .vitamins>h2 {
@@ -100,9 +102,7 @@
     flex-wrap: nowrap;
   }
 
-  .vitamins__info>ul {
-    width: calc(100% - 100px);
-  }
+  .vitamins__info>ul {}
 
   .c__vitamins>.vitamins__text>div>img {
     width: 410px;
@@ -589,6 +589,10 @@
     -ms-align-items: center;
     align-items: center;
     padding: 25px;
+  }
+
+  .vitamins__info>p {
+    margin-bottom: 15px;
   }
 
   .vitamins__info>p:after {
