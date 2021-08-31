@@ -523,15 +523,41 @@
   }
 
   .header__wrapper {
-    height: 450px;
+    height: 850px;
   }
 
-  .header__right {
-    display: none;
+  .header__right>.vitaminD>span, .header__right>.vitaminC>span {
+    font-size: 45px;
+    right: -30px;
+    top: 30px;
+  }
+
+  .header__right>.vitaminC>span {
+    right: 20px;
+  }
+
+  .header__right>.vitaminC>img {
+    width: 220px;
+  }
+
+  .header__right>.plus {
+    width: 50px;
+    height: 50px;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .header__right>.vitaminD>img {
+    width: 273px;
   }
 
   .header__left>h1 {
     width: 100%;
+  }
+
+  .header__right>div>img {
+    left: -45px;
+    bottom: -30px;
   }
 
   .d3__wrapper:before, .d3__wrapper:after, .c__wrapper:before, .c__wrapper:after {
@@ -594,7 +620,14 @@
   .c__vitamins .functions__right>.block3>span,
   .c__vitamins .functions__right>.block4>span,
   .c__vitamins .functions__right>.block5>span {
-    width: 300px;
+    width: 330px;
+    font-size: 16px;
+    color: #808080;
+  }
+
+  .functions__right {
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .functions__right>div>.icon,
@@ -605,6 +638,10 @@
 
   .functions__block {
     height: auto;
+  }
+
+  .functions {
+    border: 0;
   }
 
   .c__vitamins .functions__right {
@@ -618,7 +655,7 @@
   }
 
   .functions__right {
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
   }
 
@@ -648,6 +685,147 @@
   .c__vitamins>.functions>.functions__title {
     bottom: -10px;
     background: transparent;
+  }
+
+  .additionalLinkMobile {
+    width: 335px;
+    margin: auto;
+    display: block;
+    height: 40px;
+    background: rgba(241, 247, 253, 0.8);
+    border-radius: 10px;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding-left: 13px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.4px;
+    line-height: 150%;
+    color: #004E6B;
+  }
+
+  .additionalLinkMobile:after {
+    content: '';
+    width: 12px;
+    height: 6px;
+    background-image: url("../images/icons/arrow_down_d3.svg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+  }
+
+  .additional {
+    display: none;
+  }
+
+  .additionalLink {
+    display: none;
+  }
+
+  .additionalMobile {
+    display: block;
+  }
+
+  .c__vitamins>.functions {
+    padding: 0;
+    border: 0;
+  }
+
+  .functions__title {
+    display: none;
+  }
+
+  .c__vitamins .functions__titleMobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    position: relative;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FA8828;
+  }
+
+  .c__vitamins .functions__titleMobile:after {
+    content: '';
+    width: 100px;
+    height: 8px;
+    background-image: url("../images/d3/path.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    left: -15px;
+    top: 35px;
+  }
+
+  .c__vitamins .additionalLinkMobile {
+    background: #FFF4E5;
+    color: #AB4D13;
+  }
+
+  .c__vitamins .additionalLinkMobile:after {
+    background-image: url("../images/icons/arrow_down_c.svg");
+  }
+
+  .additionalLinkMobile.active:after {
+    transform: rotate(180deg);
+  }
+
+  .additionalMobile {
+    padding-top: 25px;
+  }
+
+  .additionalMobile>div {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .additionalMobile>div>.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    position: relative;
+    align-self: flex-start;
+    top: 5px;
+    background-image: url("../images/icons/add_light.svg");
+    background-size: cover;
+  }
+
+  .additionalMobile>div>span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: #929396;
+    width: 300px;
+  }
+
+  .c__vitamins .additionalMobile>div>.icon {
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/icons/add_orange_light.svg");
+    background-size: cover;
+  }
+
+  .c__vitamins .additionalMobile>div>span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: #929396;
   }
 
   .together__info>.info__p>h2, .together__info>.info__p>p {

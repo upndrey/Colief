@@ -656,6 +656,18 @@ body {
   border-bottom: 1px dashed #004E6B;
 }
 
+.additionalLinkMobile {
+  display: none;
+}
+
+.additionalMobile {
+  display: none;
+}
+
+.functions__titleMobile {
+  display: none;
+}
+
 /* /D3 */
 /* C */
 .c__wrapper {
@@ -1688,6 +1700,7 @@ body {
   color: #0D2E54;
   cursor: pointer;
   z-index: 2;
+  margin-bottom: 10px;
   transition: color .5s ease-in-out, background .5s ease-in-out;
 }
 
@@ -1717,8 +1730,6 @@ body {
 
 .question__text {
   position: relative;
-  max-height: 500px;
-  transition: max-height .5s ease-in-out;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -1727,7 +1738,6 @@ body {
   justify-content: center;
   bottom: 15px;
   z-index: 1;
-  margin-bottom: 0;
 }
 
 .question__text>p {
@@ -1742,11 +1752,7 @@ body {
   line-height: 130%;
 }
 
-.question__text.hidden {
-  max-height: 0;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
+.question__text.hidden {}
 
 /* /QUESTIONS */
 /* HEALTH */
