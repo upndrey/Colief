@@ -574,12 +574,20 @@
     top: -150px;
   }
 
+  .advantages__block {
+    width: 170px;
+  }
+
   .d3__vitamins {
     margin-top: 0;
   }
 
   .vitamins__text>.text__p {
     width: 100%;
+  }
+
+  .vitamins__text>div:first-child {
+    margin-right: 0;
   }
 
   .vitamins__info {
