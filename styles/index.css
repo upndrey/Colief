@@ -672,7 +672,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
-  color: #8199DF;
+  color: #808080;
 }
 
 .additionalLink {
@@ -685,7 +685,7 @@ body {
   font-size: 14.4px;
   line-height: 150%;
   color: #004E6B;
-  margin-bottom: 65px;
+  margin-bottom: 100px;
   box-sizing: border-box;
   cursor: pointer;
   border-bottom: 1px dashed #004E6B;
@@ -712,7 +712,7 @@ body {
   box-shadow: 0px 2px 2px 3px rgba(191, 217, 254, 0.1);
   border-radius: 40px;
   position: relative;
-  bottom: 40px;
+  bottom: 70px;
   box-sizing: border-box;
   padding: 40px;
 }
@@ -876,7 +876,7 @@ body {
 }
 
 .c__vitamins .functions__right>div>span {
-  color: rgba(255, 146, 0, 1);
+  color: #808080;
   line-height: 150%;
 }
 
@@ -1656,6 +1656,11 @@ body {
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
+}
+
+.slick__elem>div>img {
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
 }
 
 .slick-prev {
