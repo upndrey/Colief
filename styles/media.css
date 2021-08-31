@@ -588,7 +588,11 @@
     flex-direction: column;
     -ms-align-items: center;
     align-items: center;
-    padding: 5px;
+    padding: 25px;
+  }
+
+  .vitamins__info>p:after {
+    width: 170px;
   }
 
   .vitamins__info>ul {
@@ -742,7 +746,7 @@
     display: none;
   }
 
-  .c__vitamins .functions__titleMobile {
+  .functions__titleMobile {
     display: block;
     text-align: center;
     margin-bottom: 35px;
@@ -752,10 +756,10 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 130%;
-    color: #FA8828;
+    color: #7D82B8;
   }
 
-  .c__vitamins .functions__titleMobile:after {
+  .functions__titleMobile:after {
     content: '';
     width: 100px;
     height: 8px;
@@ -767,6 +771,14 @@
     top: 35px;
   }
 
+  .c__vitamins .functions__titleMobile {
+    color: #FA8828;
+  }
+
+  .c__vitamins .functions__titleMobile:after {
+    background-image: url("../images/c/path.png");
+  }
+
   .c__vitamins .additionalLinkMobile {
     background: #FFF4E5;
     color: #AB4D13;
@@ -774,6 +786,16 @@
 
   .c__vitamins .additionalLinkMobile:after {
     background-image: url("../images/icons/arrow_down_c.svg");
+  }
+
+  .additionalLinkMobile.active {
+    background: transparent;
+    color: rgba(0, 78, 107, 0.5);
+  }
+
+  .c__vitamins .additionalLinkMobile.active {
+    background: transparent;
+    color: rgba(171, 77, 19, 0.5);
   }
 
   .additionalLinkMobile.active:after {
