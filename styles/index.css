@@ -1170,14 +1170,17 @@ body {
 .discount__info>.info__left>img {
   right: -373px;
   top: -234px;
+  z-index: 2;
 }
 
 .discount__info>.info__right>img {
   left: -304px;
   top: -234px;
+  z-index: 1;
 }
 
 .discount__button {
+  position: relative;
   margin: auto;
   width: 232px;
   height: 44px;
@@ -1190,6 +1193,12 @@ body {
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
+  z-index: 1001;
+  transition: box-shadow .5s ease-in-out;
+}
+
+.discount__button:hover {
+  box-shadow: 0px 0px 0px 1px #AFCCF4;
 }
 
 .discount__button>span {
@@ -1971,6 +1980,13 @@ body {
   line-height: 16px;
   text-align: center;
   text-transform: none;
+  transition: background .5s ease-in-out, color .5s ease-in-out;
+}
+
+.footer__wrapper .nav__order:hover {
+  background: transparent;
+  color: #F1BC19;
+  border: 1px solid #F1BC19;
 }
 
 .footer__wrapper>a {
