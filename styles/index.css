@@ -1,12 +1,18 @@
 /* GLOBAL */
 body {
   font-family: 'Rubik', sans-serif;
-  min-width: 425px;
-  width: 100%;
 }
 
 html, body {
   overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
