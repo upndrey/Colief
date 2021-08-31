@@ -4,6 +4,14 @@ body {
   min-width: 425px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative
+}
+
 .container {
   width: 1440px;
   padding: 0 94px;
