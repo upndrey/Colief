@@ -260,9 +260,10 @@
   .burger__icon {
     display: block;
     position: relative;
-    background: rgba(0, 0, 0, 1);
+    bottom: 8px;
+    background: #004577;
     width: 90%;
-    height: 4px;
+    height: 2px;
     transition: .4s;
   }
 
@@ -271,18 +272,21 @@
     content: "";
     display: block;
     position: absolute;
-    background: rgba(0, 0, 0, 1);
+    background: #004577;
     width: 100%;
-    height: 4px;
+    height: 2px;
     transition: .4s;
+    right: 0;
   }
 
   .burger__icon::after {
     top: 8px;
+    width: 80%;
   }
 
   .burger__icon::before {
-    top: -8px;
+    top: 16px;
+    width: 50%;
   }
 
   .burger.active>.burger__icon {
@@ -291,7 +295,8 @@
 
   .burger.active>.burger__icon::before,
   .burger.active>.burger__icon::after {
-    top: 0;
+    top: 8px;
+    width: 100%;
   }
 
   .burger.active>.burger__icon::after {
@@ -494,7 +499,7 @@
     width: 100%;
   }
 
-  .partners>div {
+  .partners>a {
     width: 100%;
   }
 
@@ -523,18 +528,31 @@
   }
 
   .nav__wrapper {
-    height: 75px;
+    height: 60px;
+  }
+
+  .nav__wrapper .nav__logo {
+    width: 72px;
+    height: 49px;
   }
 
   .header__wrapper {
-    margin-top: 75px;
+    margin-top: 60px;
     height: 850px;
   }
 
   .header__right>.vitaminD>span, .header__right>.vitaminC>span {
     font-size: 45px;
     right: -30px;
-    top: 30px;
+    top: 20px;
+  }
+
+  .header__right {
+    height: 260px;
+  }
+
+  .header__right>div {
+    height: 175px;
   }
 
   .header__right>.vitaminC>span {
@@ -542,7 +560,7 @@
   }
 
   .header__right>.vitaminC>img {
-    width: 220px;
+    width: 165px;
   }
 
   .header__right>.plus {
@@ -553,15 +571,20 @@
   }
 
   .header__right>.vitaminD>img {
-    width: 273px;
+    width: 204px;
   }
 
   .header__left>h1 {
     width: 100%;
   }
 
+  .header__right>.plus {
+    left: 10px;
+    bottom: -45px;
+  }
+
   .header__right>div>img {
-    left: -45px;
+    left: -15px;
     bottom: -30px;
   }
 
@@ -621,6 +644,10 @@
 
   .vitamins__info>ul>li {
     margin-bottom: 10px;
+  }
+
+  .vitamins__info>ul>li>span {
+    display: block;
   }
 
   .vitamins__info>.icon {
@@ -895,9 +922,7 @@
     margin-right: 0;
   }
 
-  .discount__info>.info__left>img, .discount__info>.info__right>img {
-    display: none;
-  }
+  .discount__info>.info__left>img, .discount__info>.info__right>img {}
 
   .discount__wrapper {
     padding: 0 20px;
@@ -927,22 +952,62 @@
   }
 
   .discount__info {
-    height: 350px;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
   }
 
   .discount__info>div {
     margin-top: 0;
     margin-bottom: 0;
+    height: 500px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .discount__info>.info__right>p, .discount__info>.info__left>p {
+    font-size: 28px;
+  }
+
+  .discount__info>.info__left {
+    height: 350px;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .discount__info>.info__right {
+    height: 400px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .discount__info>div>img {
+    position: relative;
+  }
+
+  .discount__info>.info__left>img, .discount__info>.info__right>img {
+    top: 35px;
+  }
+
+  .discount__info>.info__left>img {
+    width: 253px;
+  }
+
+  .discount__info>.info__right>img {
+    width: 187px;
   }
 
   .discount__info>.info__plus {
-    top: 0;
+    top: 40px;
     left: 0;
   }
 
@@ -972,15 +1037,46 @@
   }
 
   .onlineC__title, .onlineD3__title {
-    font-size: 28px;
+    font-size: 26px;
+    text-align: center;
   }
 
   .onlineC__img:before {
     right: -370px;
   }
 
+  .onlineD3__img {
+    height: 345px;
+  }
+
+  .onlineC__img {
+    height: 365px;
+  }
+
+  .onlineD3__img>img {
+    width: 284px;
+    left: -75px;
+    top: 0px;
+  }
+
+  .onlineC__img>img {
+    width: 257px;
+    left: -50px;
+    top: 130px;
+  }
+
+  .onlineD3__img:before, .onlineC__img:before {
+    display: none;
+  }
+
   .onlineC .content__left {
     width: 100%;
+  }
+
+  .partners>a {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
 
   .onlineC__content {

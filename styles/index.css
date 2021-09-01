@@ -91,7 +91,7 @@ body {
 
 .nav__wrapper {
   background: #ecf0fa;
-  height: 147px;
+  height: 100px;
   position: fixed;
   z-index: 2000;
 }
@@ -106,7 +106,7 @@ body {
 }
 
 .nav__logo {
-  background-image: url("../images/icons/colief.svg");
+  background-image: url("../images/icons/colief.png");
   background-size: cover;
   width: 96px;
   height: 65px;
@@ -171,7 +171,7 @@ body {
   height: 650px;
   box-sizing: border-box;
   background: #8199DF26;
-  margin-top: 145px;
+  margin-top: 100px;
 }
 
 .header {
@@ -229,13 +229,12 @@ body {
   border-radius: 35px;
   border: 0;
   cursor: pointer;
-  transition: box-shadow .5s ease-in-out,
-    border .5s ease-in-out;
+  transition: box-shadow .5s ease-in-out;
 }
 
 .header__left>button:hover {
   background: transparent;
-  border: 1px solid #FCCA05;
+  border: 2px solid #FCCA05;
   color: #FCCA05;
   box-shadow: 1px 0px 0px 1px rgba(0, 0, 0, 0.07);
 }
@@ -1440,7 +1439,7 @@ body {
   flex-wrap: wrap;
 }
 
-.partners>div {
+.partners>a {
   width: 192px;
   height: 44px;
   display: -webkit-flex;
@@ -1456,6 +1455,13 @@ body {
   border-radius: 24px;
   margin-bottom: 25px;
   margin-right: 20px;
+  transition: box-shadow .5s ease-in-out;
+}
+
+.partners>a:hover {
+  background: transparent;
+  border: 3px solid #DDEBFF;
+  box-shadow: 0px 0px 0px 1px rgba(190, 17, 165, 0.04);
 }
 
 .partners>.wildberries>.icon {
@@ -1915,6 +1921,14 @@ body {
   justify-content: center;
   bottom: 15px;
   z-index: 1;
+}
+
+.question__text b {
+  font-weight: bold;
+}
+
+.question__text ul {
+  list-style: circle;
 }
 
 .question__text>div {
