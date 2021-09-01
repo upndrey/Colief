@@ -88,6 +88,44 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  $(window).scroll(function(event) {
+    var scroll = $(window).scrollTop();
+    if (scroll < $("#d3").offset().top - 160 && !$('.buyLink').hasClass("active")) {
+      $('.buyLink').toggleClass("active");
+      $('.d3Link').removeClass("active");
+      $('.cLink').removeClass("active");
+      $('.reviewsLink').removeClass("active");
+      $('.contactsLink').removeClass("active");
+    } else if (scroll >= $("#d3").offset().top - 150 &&
+      scroll < $("#c").offset().top - 100 && !$('.d3Link').hasClass("active")) {
+      $('.buyLink').removeClass("active");
+      $('.d3Link').toggleClass("active");
+      $('.cLink').removeClass("active");
+      $('.reviewsLink').removeClass("active");
+      $('.contactsLink').removeClass("active");
+    } else if (scroll >= $("#c").offset().top - 100 &&
+      scroll < $("#reviews").offset().top - 100 && !$('.cLink').hasClass("active")) {
+      $('.buyLink').removeClass("active");
+      $('.d3Link').removeClass("active");
+      $('.cLink').toggleClass("active");
+      $('.reviewsLink').removeClass("active");
+      $('.contactsLink').removeClass("active");
+    } else if (scroll >= $("#reviews").offset().top - 100 &&
+      scroll < $("#contacts").offset().top - 1500 && !$('.reviewsLink').hasClass("active")) {
+      $('.buyLink').removeClass("active");
+      $('.d3Link').removeClass("active");
+      $('.cLink').removeClass("active");
+      $('.reviewsLink').toggleClass("active");
+      $('.contactsLink').removeClass("active");
+    } else if (scroll >= $("#contacts").offset().top - 1500 && !$('.contactsLink').hasClass("active")) {
+      $('.buyLink').removeClass("active");
+      $('.d3Link').removeClass("active");
+      $('.cLink').removeClass("active");
+      $('.reviewsLink').removeClass("active");
+      $('.contactsLink').toggleClass("active");
+    }
+  });
+
   // scrolls
   $(".buyLink").click(function() {
     burgerDom.classList.remove("active");
@@ -100,28 +138,28 @@ document.addEventListener("DOMContentLoaded", () => {
     burgerDom.classList.remove("active");
     mobileNavDom.classList.add("hidden");
     $('html, body').animate({
-      scrollTop: $("#d3").offset().top
+      scrollTop: $("#d3").offset().top - 150
     }, 1000);
   });
   $(".cLink").click(function() {
     burgerDom.classList.remove("active");
     mobileNavDom.classList.add("hidden");
     $('html, body').animate({
-      scrollTop: $("#c").offset().top
+      scrollTop: $("#c").offset().top - 25
     }, 1000);
   });
   $(".reviewsLink").click(function() {
     burgerDom.classList.remove("active");
     mobileNavDom.classList.add("hidden");
     $('html, body').animate({
-      scrollTop: $("#reviews").offset().top
+      scrollTop: $("#reviews").offset().top - 25
     }, 1000);
   });
   $(".contactsLink").click(function() {
     burgerDom.classList.remove("active");
     mobileNavDom.classList.add("hidden");
     $('html, body').animate({
-      scrollTop: $("#contacts").offset().top
+      scrollTop: $("#contacts").offset().top - 100
     }, 1000);
   });
 });

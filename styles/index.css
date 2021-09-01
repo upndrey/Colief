@@ -41,11 +41,13 @@ body {
 }
 
 .mobileNav__wrapper {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 500px;
   background: #fff;
-  z-index: 1001;
+  z-index: 2000;
+  padding-top: 100px;
 }
 
 .mobileNav {
@@ -88,8 +90,10 @@ body {
 }
 
 .nav__wrapper {
-  background: #8199DF26;
+  background: #ecf0fa;
   height: 147px;
+  position: fixed;
+  z-index: 2000;
 }
 
 .nav {
@@ -167,6 +171,7 @@ body {
   height: 650px;
   box-sizing: border-box;
   background: #8199DF26;
+  margin-top: 145px;
 }
 
 .header {

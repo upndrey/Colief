@@ -522,7 +522,12 @@
     padding: 0 15px;
   }
 
+  .nav__wrapper {
+    height: 75px;
+  }
+
   .header__wrapper {
+    margin-top: 75px;
     height: 850px;
   }
 
