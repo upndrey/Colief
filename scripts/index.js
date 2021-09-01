@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $(window).scroll(function(event) {
     var scroll = $(window).scrollTop();
-    if (scroll < $("#d3").offset().top - 160 && !$('.buyLink').hasClass("active")) {
+    if (scroll < $("#d3").offset().top - 150 && !$('.buyLink').hasClass("active")) {
       $('.buyLink').toggleClass("active");
       $('.d3Link').removeClass("active");
       $('.cLink').removeClass("active");
