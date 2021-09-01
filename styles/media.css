@@ -541,6 +541,10 @@
     height: 850px;
   }
 
+  .header__left>h1 {
+    font-size: 25px;
+  }
+
   .header__right>.vitaminD>span, .header__right>.vitaminC>span {
     font-size: 45px;
     right: -30px;

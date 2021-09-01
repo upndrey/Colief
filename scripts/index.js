@@ -162,4 +162,16 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTop: $("#contacts").offset().top - 100
     }, 1000);
   });
+  $(".details, .nav .nav__order, .footer .nav__order").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#discount").offset().top - 10
+    }, 1000);
+  });
+  $(".mobileNav .nav__order").click(function() {
+    burgerDom.classList.remove("active");
+    mobileNavDom.classList.add("hidden");
+    $('html, body').animate({
+      scrollTop: $("#discount").offset().top - 10
+    }, 1000);
+  });
 });
