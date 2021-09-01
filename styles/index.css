@@ -229,10 +229,14 @@ body {
   border-radius: 35px;
   border: 0;
   cursor: pointer;
-  transition: box-shadow .5s ease-in-out;
+  transition: box-shadow .5s ease-in-out,
+    border .5s ease-in-out;
 }
 
 .header__left>button:hover {
+  background: transparent;
+  border: 1px solid #FCCA05;
+  color: #FCCA05;
   box-shadow: 1px 0px 0px 1px rgba(0, 0, 0, 0.07);
 }
 
@@ -749,6 +753,10 @@ body {
   -ms-align-items: center;
   align-items: center;
   margin-bottom: 15px;
+}
+
+.additional>div:last-child {
+  margin-bottom: 0;
 }
 
 .additional>div>.icon {
