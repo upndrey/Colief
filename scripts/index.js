@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $(window).scroll(function(event) {
     var scroll = $(window).scrollTop();
-    if (scroll < $("#d3").offset().top - 150 && !$('.buyLink').hasClass("active")) {
-      $('.buyLink').toggleClass("active");
+    if (scroll < $("#d3").offset().top - 150) {
+      $('.buyLink').removeClass("active");
       $('.d3Link').removeClass("active");
       $('.cLink').removeClass("active");
       $('.reviewsLink').removeClass("active");
@@ -99,15 +99,22 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (scroll >= $("#d3").offset().top - 150 &&
       scroll < $("#c").offset().top - 100 && !$('.d3Link').hasClass("active")) {
       $('.buyLink').removeClass("active");
-      $('.d3Link').toggleClass("active");
+      $('.d3Link').addClass("active");
       $('.cLink').removeClass("active");
       $('.reviewsLink').removeClass("active");
       $('.contactsLink').removeClass("active");
     } else if (scroll >= $("#c").offset().top - 100 &&
-      scroll < $("#reviews").offset().top - 100 && !$('.cLink').hasClass("active")) {
+      scroll < $("#discount").offset().top - 100 && !$('.cLink').hasClass("active")) {
       $('.buyLink').removeClass("active");
       $('.d3Link').removeClass("active");
-      $('.cLink').toggleClass("active");
+      $('.cLink').addClass("active");
+      $('.reviewsLink').removeClass("active");
+      $('.contactsLink').removeClass("active");
+    } else if (scroll >= $("#discount").offset().top - 100 &&
+      scroll < $("#reviews").offset().top - 100 && !$('.buyLink').hasClass("active")) {
+      $('.buyLink').addClass("active");
+      $('.d3Link').removeClass("active");
+      $('.cLink').removeClass("active");
       $('.reviewsLink').removeClass("active");
       $('.contactsLink').removeClass("active");
     } else if (scroll >= $("#reviews").offset().top - 100 &&
@@ -115,25 +122,18 @@ document.addEventListener("DOMContentLoaded", () => {
       $('.buyLink').removeClass("active");
       $('.d3Link').removeClass("active");
       $('.cLink').removeClass("active");
-      $('.reviewsLink').toggleClass("active");
+      $('.reviewsLink').addClass("active");
       $('.contactsLink').removeClass("active");
     } else if (scroll >= $("#contacts").offset().top - 1500 && !$('.contactsLink').hasClass("active")) {
       $('.buyLink').removeClass("active");
       $('.d3Link').removeClass("active");
       $('.cLink').removeClass("active");
       $('.reviewsLink').removeClass("active");
-      $('.contactsLink').toggleClass("active");
+      $('.contactsLink').addClass("active");
     }
   });
 
   // scrolls
-  $(".buyLink").click(function() {
-    burgerDom.classList.remove("active");
-    mobileNavDom.classList.add("hidden");
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000);
-  });
   $(".d3Link").click(function() {
     burgerDom.classList.remove("active");
     mobileNavDom.classList.add("hidden");
@@ -146,6 +146,13 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileNavDom.classList.add("hidden");
     $('html, body').animate({
       scrollTop: $("#c").offset().top - 25
+    }, 1000);
+  });
+  $(".buyLink").click(function() {
+    burgerDom.classList.remove("active");
+    mobileNavDom.classList.add("hidden");
+    $('html, body').animate({
+      scrollTop: $("#discount").offset().top - 10
     }, 1000);
   });
   $(".reviewsLink").click(function() {

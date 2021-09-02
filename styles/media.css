@@ -1109,6 +1109,10 @@
   .health>h2 {
     margin-bottom: 75px;
   }
+
+  .footer__wrapper .nav__list {
+    text-transform: capitalize;
+  }
 }
 
 @media (max-width: 575.98px) {}
