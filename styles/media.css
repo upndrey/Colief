@@ -1106,6 +1106,10 @@
     right: 15px;
   }
 
+  .health__wrapper {
+    background-position: -900px 0;
+  }
+
   .health>h2 {
     margin-bottom: 75px;
   }
